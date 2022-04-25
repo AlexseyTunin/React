@@ -20,7 +20,7 @@ const ControlPanel = ({addMessages}) => {
 
   const handleClick = () => {
         if(value !== '') {
-          const newMessage = {text: value, author:AUTHOR.me }
+          const newMessages = {text: value, author:AUTHOR.me }
           addMessages(chatId, newMessages);
           setValue('');
           inputRef.current.focus();

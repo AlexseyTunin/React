@@ -40,6 +40,12 @@ a {
   align-items: center;
 }
 
+.messengerPlace{
+    border: 1px solid darkblue;
+    border-radius: 37px;
+    padding: 17px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
