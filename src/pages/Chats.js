@@ -4,9 +4,10 @@ import ControlPanel from "../components/ControlPanel"
 
 
 
+
 const Chats = ({chats, addMessages}) => {
 
-    return (
+        return (
             <div className="wrapper">
                 <ChatList chats ={chats} />
                 <div className="messengerPlace">

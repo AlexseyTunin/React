@@ -1,26 +1,19 @@
 import Router from './pages/Router';
 import './App.css';
+import React, { useState }  from 'react';
+import { Provider } from 'react-redux';
+import store from './store';
 
 
-
-
-/*const chats = [
-  {
-    name: 'Работа',
-    message: 'Срочно явиться к директору',
-  },
-  {
-    name: 'Дом',
-    message: 'Милый, жду домой к 8',
-  }
-]*/
 
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
-          <Router />
+          <Provider store={store}>
+            <Router />
+          </Provider>     
       </header>
     </div>
   );
