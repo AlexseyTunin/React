@@ -1,8 +1,8 @@
-import EXAMPLE_ACTION from './action';
+import EXAMPLE_ACTION, { UPDATE_NAME } from './action';
 
 
 const initialState = {
-    showName: false,
+    showName: true,
     name: 'Alex'
 };
 
@@ -14,6 +14,12 @@ const profileReducer = (state = initialState, action) => {
                 ...state,
                 showName: !state.showName
             };
+
+            case UPDATE_NAME:
+                return {
+                    ...state,
+                    name: action.payload
+                }
         default:
              return state;   
     }
